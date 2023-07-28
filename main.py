@@ -275,7 +275,8 @@ async def send_specific_mess_history(call:types.CallbackQuery, callback_data:dic
             types.ContentType.AUDIO,
             types.ContentType.VOICE,
             types.ContentType.VIDEO,
-            types.ContentType.ANIMATION 
+            types.ContentType.ANIMATION,
+            types.ContentType.STICKER 
         ])
 async def adding_messages_to_his(message: types.Message, state: FSMContext):
     user = db.returnUser(message.from_user.id)
